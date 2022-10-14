@@ -1,9 +1,5 @@
-: :root{
-
-}
-
-/* Основний колір тексту #212121 */
-/* Вторинний колір тексту #757575 */
+/* Вторинний колір тексту #212121 */
+/* Основний колір тексту #757575 */
 /* Колір тексту логотипу #2196F3   #000000 */
 /* Колір меню навігації #212121 */
 /* Колір активного посилання #2196F3 */
@@ -13,46 +9,109 @@
 /* Колір білого тексту background: #FFFFFF; */
 /* Основний колір фону #FFFFFF */
 
-body {
-    background-color: #FFFFFF;
-    color: #757575;
+:root{
+--primary-text-color: #757575;
+--title-text-color: #212121;
+--h1-text-color: #FFFFFF;
+--accent-color: #2196F3;
+--logo-primary-text-color: #2196F3;
+--logo-title-text-color: #000000;
+--nav-primary-text-color: #212121;
+--email-tel-color-footer: rgba(255, 255, 255, 0.6);
+--primary-fon-color: #FFFFFF;
+--primary-color-footer: #2F303A;
 }
+
+
+
+/* index.html */
+
+body {
+    background-color: var(--primary-fon-color);
+    color: var(--primary-text-color);
+  }
 ul{list-style: none;}
 
 /* Шапка */
+
 .logo {
-color: #2196F3;
+color: var(--logo-primary-text-color);
+}
+.stydio{
+  color: var(--title-text-color);
 }
 .site-nav .link {
-color: #212121;
+color: var(--nav-primary-text-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
+}
+.site-nav .link.current{
+  color:var(--accent-color);
 }
 .contacts-nav a {
-color: #757575;
+color: var(--primary-text-color);
 }
 .contact-link:hover,
 .contact-link:focus {
-  color: #2196F3;
+  color: var(--accent-color);
 }
 
 /* Банер */
 
+.baner {
+  background-color: var(--primary-color-footer);
+}
+.baner-title {
+  color: var(--h1-text-color);
+}
+.button {
+  background-color: var(--accent-color);
+  color: var(--h1-text-color);
+
+}
+
 /* Наші переваги */
+
 .section-title, 
 .title{
-color: #212121;    
+color: var(--title-text-color);    
 }
 
 /* Чим ми займаємось */
 
 
 /* Наша команда */
+
+.section-team{
+  background-color: #F5F4FA;
+}
 .command-list,
 .title{
-color: #212121;  
+color: var(--title-text-color);  
 }
 
 /* Підвал */
+.footer-color{
+  background-color: #2F303A;
+}
+.stydio-footer{
+  color: var(--h1-text-color);
+}
+.address-nav .link {
+  color:var(--h1-text-color);
+}
+
+.address-nav .link:hover,
+.address-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.nav-link{
+  color: rgba(255, 255, 255, 0.6);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
