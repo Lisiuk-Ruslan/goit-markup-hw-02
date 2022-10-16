@@ -99,7 +99,10 @@ font-weight: 500;
     
 
 }
-
+.baner-button:hover,
+.baner-button:focus{
+  background-color: #188CE8;
+}
 /* Наші переваги */
 .section-list{
 font-size: 14px;
