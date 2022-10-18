@@ -106,6 +106,7 @@ a {
   background-color: var(--accent-color);
   color: var(--h1-text-color);
 
+  font-family: 'Roboto';
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -170,7 +171,7 @@ a {
 }
 .position {
   font-size: 16px;
-  line-height: 1.19px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
