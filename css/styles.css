@@ -32,6 +32,21 @@ body {
     font-family: roboto, sans-serif;
   }
 ul{list-style: none;}
+a{
+  text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 
 /* Шапка */
 
@@ -172,10 +187,12 @@ background-color: #2F303A;
 color: var(--h1-text-color);
 }
 .address-nav .link {
+font-family: 'Roboto';
 color:var(--h1-text-color);
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
+font-style: initial;
 }
 
 .address-nav .link:hover,
@@ -184,10 +201,12 @@ color: var(--accent-color);
 }
 
 .nav-link{
+font-family: 'Roboto';
 color: rgba(255, 255, 255, 0.6);
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
+font-style: initial;
 }
 .nav-link:hover,
 .nav-link:focus {
